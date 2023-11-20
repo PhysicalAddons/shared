@@ -1,9 +1,3 @@
-{% set promo = true %}
-{% set discount = 0.30 %}
-{% set price_basic = 50 %}
-{% set price_studio = 250 %}
-{% set price_bundle = 142 %}
-
 <div class="pricing {{ promo ? 'pricing--discount' : '' }} block" id="pricing">
 
 	<h2 class="pricing__title">Pricing</h2>
@@ -119,7 +113,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="https://blendermarket.com/products/physical-open-waters?variant=9045" class="btn btn--primary" target="_blank">Select</a>
+                                <a href="{{link_basic}}" class="btn btn--primary" target="_blank">Select</a>
                             </div>
                         </div>
                     </td>
@@ -134,7 +128,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="https://blendermarket.com/products/physical-open-waters?variant=9047" class="btn btn--primary" target="_blank">Select</a>
+                                <a href="{{link_studio}}" class="btn btn--primary" target="_blank">Select</a>
                             </div>
                         </div>
                     </td>
@@ -193,7 +187,7 @@
         'description': 'One time payment',
         'btn': {
             'title': 'Select',
-            'link': 'https://blendermarket.com/products/physical-open-waters?variant=9045',
+            'link': link_basic,
             'type': 'btn--primary'
         },
         'features': [
@@ -220,7 +214,7 @@
         'description': 'One time payment',
         'btn': {
             'title': 'Select',
-            'link': 'https://blendermarket.com/products/physical-open-waters?variant=9047',
+            'link': link_studio,
             'type': 'btn--primary'
         },
         'feature_description': 'Same as Basic plus',

@@ -11,65 +11,16 @@
 	<div class="controls__table">
 
         <table>
-        
+            {% for control in controls %}
             <tr>
-                <td><h4>Settings</h4></td>
+                <td><h4>{{control.title}}</h4></td>
                 <td>
-                    <p style="color:red">
-                        Ocean Size
-                        Base Resolution (first level)
-                        Subdivision Resolution (second level)
-                        Time Scale (time multiplier)
+                    <p>
+                        {{control.description}}
                     </p>
                 </td>
-            </tr>
-            <tr>
-                <td><h4>Camera</h4></td>
-                <td>
-                    <p style="color:red">
-                        Object
-                        View Frustrum Boost
-                        Far LOD Offset
-                        Near LOD Offset
-                        LOD Exponent
-                    </p>
-                </td>    
-            </tr>
-            <tr>
-                <td><h4>Waves</h4></td>
-                <td><p style="color:red">
-                        Frequency
-                            Min
-                            Max
-                        Amplitude
-                        Distribution Log
-                        Dispersion
-                        Angle
-                        Skew
-                        Choppiness
-                        Wind Speed
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td><h4>Capillary Waves</h4></td>
-                <td><p style="color:red">w
-                        Strength
-                        Scale
-                        Stretch
-                        Directiond
-                        Speed
-                        Variance
-                        Drag
-                        Mask
-                            Scale
-                            Min
-                            Max
-                        Roughness Min
-                        Roughness Max
-                    </p>
-                </td>
-            </tr>
+            </tr>   
+            {% endfor %}
         </table>
 
 	</div>
