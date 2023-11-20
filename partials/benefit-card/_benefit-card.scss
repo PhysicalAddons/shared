@@ -141,13 +141,14 @@
     }
     .videoContainer {
         overflow: hidden;
-        video {
+        video, img {
             position: absolute;
             top: 0;
             right: 0;
             width: 100%;
             min-width: 630px;
         }
+
     }
     .videoContainerSmall {
         video {
@@ -167,10 +168,10 @@
         //background-size: cover;
     }
     .image3 {
-        @include backgroundImage('/assets/images/benefits/benefits-animation.webp', '/assets/images/benefits/benefits-animation2x.webp');
+        @include backgroundImage('/assets/images/benefits/features-3.jpg', '/assets/images/benefits/features-3x2.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
     }
     &.image4 { 
         // @include backgroundImage('/assets/images/benefits/benefits-freedom.webp', '/assets/images/benefits/benefits-freedom2x.webp');

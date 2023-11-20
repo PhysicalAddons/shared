@@ -1,5 +1,4 @@
 .updates {
-    background-color: red; // placehold
 
     &__title {
         @extend .h2;
@@ -46,6 +45,12 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 140%;
+            b {
+                font-weight: 600;
+            }
+            & + p {
+              margin-top: 16px;  
+            }
         }
 
         img {
